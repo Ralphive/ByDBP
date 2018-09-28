@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+
+
+
+	
+
+
+		
+<UXComponent xmlns:base="http://www.sap.com/a1s/cd/oberon/base-1.0" xmlns:uxv="http://www.sap.com/a1s/cd/oberon/uxview-1.0" xmlns:uxc="http://www.sap.com/a1s/cd/oberon/uxcontroller-1.0" id="hNtcil5sRK2JUiJJ5ZFbTm" enableBackendOperationsClubbing="true" name="BonusPlanRO_OIF" AuthorizationClassificationCode="Application"
+  useUIController="true" taskRegionDisabled="true" helpId="fe4699fa-af75-47bc-b8de-31a41e415177" designtimeVersion="5.20.0.7" modelVersion="1.0" xmlns="http://www.sap.com/a1s/cd/oberon/uxcomponent-1.0">
+  <uxc:Interface id="R0Y9OjxAJKsRqJPyEWlPmm">
+
+	    	<uxc:InPorts id="r4hHUhJu_q6Yygo0UOLU60">
+  				<uxc:InPort id="Jk2mrd1YY4IdNss9yxgDNW" name="OBN_View_All_Inport" portTypeReference="To_BonusPlanRO_viewAll" portTypePackage="/Y081KNQXY_MAIN/SRC/BonusPlanRO_PTP.PTP.uicomponent" onFire="ViewAllHandler" navBO="PBO_BonusPlanRO" navBONS="http://refsystems.sap.com/Y081KNQXY_" navBONode="Root" navOperation="To_BonusPlanRO_viewAll">
+  					<uxc:Parameter id="ZHshY0yjeaAHoFfEENwAG0" name="Parameter0" bind="/Root/OBN_NAV_KEY" /> 
+ 	 			</uxc:InPort>
+  		</uxc:InPorts>
+    
+    <uxc:Configuration id="SSuRNNHmS4YLM1k6mApamW" /> 
+  </uxc:Interface>	
+				
+  <uxc:Implementation id="fAywusND4qgSN5VYycGl6W">
+     <uxc:DataModel id="rsIxymr7sqYPfvEumF$aIm" name="Root" designtimeMainBOProxyName="PBO_BonusPlanRO" designtimeMainBOEsrNamespace="http://refsystems.sap.com/Y081KNQXY_" >  
+       <base:PropertyBag id="sknewXtbvaoQKFYkMhOXwG">
+          <base:Property id="qh7Nb$1ed4YbIS38wTfTSm" name="BINDINGSTATUS" value="OK" />
+       </base:PropertyBag>
+   	   <uxc:Bind id="pkrsKBFfd4onh0GqIBbNQG" proxyName="PBO_BonusPlanRO" field="Root" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+      <uxc:DataField id="s$rkJE$6cKAlLuj8_khpGG" name="@ErrorOccured" type="boolean">
+        <base:PropertyBag id="3jIl4VSOvac8cOFXCo9pDG">
+          <base:Property id="OOSl5oaJ4aATwOu7272rtG" name="BINDINGSTATUS" value="Internal" />
+          <base:Property id="NnpCPMAFsaYhzqi2yY6l0m" name="USERCHANGEDNAME" value="True" />
+        </base:PropertyBag>
+      </uxc:DataField>
+      <uxc:Structure id="JRTGjEiltqYiRB62F9oXZW" name="UIState">
+        <base:PropertyBag id="7$Yw15WmP4koSY8yTOhF0G">
+          <base:Property id="jJiXLJ7HwKk_3NAh4WQ$VG" name="BINDINGSTATUS" value="Internal" />
+          <base:Property id="pgOMJpX9vaok6cQTTEIFVW" name="USERCHANGEDNAME" value="True" />
+        </base:PropertyBag>
+        <uxc:DataField id="u0OE1YOgYasct6govafi20" name="ViewSwitchSelectedItem" type="string">
+          <base:PropertyBag id="fhLU2LnVWa2Yo2JomZ$eWm">
+            <base:Property id="osXB64Pbb4oYHi5tfU$Cem" name="BINDINGSTATUS" value="Internal" />
+            <base:Property id="$EfWSaIs5Kk95wL6QteCMm" name="USERCHANGEDNAME" value="True" />
+          </base:PropertyBag>
+        </uxc:DataField>
+      </uxc:Structure>
+      <uxc:Structure id="lTHP1Q6bhaU$$49iEOZLa0" name="PBO_BonusPlanRO">
+         <base:PropertyBag id="L8VVW8xVQqYij71L25e37G">
+           <base:Property id="4RQDgq6974ITk$0TY98zem" name="BINDINGSTATUS" value="OK" />
+           <base:Property id="7PHAcTCCqqMkE$d08kdL6W" name="USERCHANGEDNAME" value="False" />
+         </base:PropertyBag>
+         <uxc:Bind id="4G81Zg8VaaAfnw28zG5B0G" proxyName="PBO_BonusPlanRO" field="Root" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+         				<uxc:DataField id="QMOIP0QfjU_rVG268YXBNQ" name="BonusPlanID" type="string" cctsType="identifier">
+							<base:PropertyBag id="pmM6UmAl9kiXUZkFYfC0Xg">
+					<base:Property id="ddKhWZSElkaT8KyRbS_NAA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="yIxNizdNTUK4Y1HPclK_3g" name="UITEXTID" value= "Y081KNQXY_BD4AA741B20C7C63" />
+					<base:Property id="QRW8SNCksk_1nRFwuFE5mg" name="XFLD" value="Bonus Plan ID" />
+					<base:Property id="QKtcZSAOHEm1JI2tASH2rA" name="XCOL" value="Bonus Plan ID" />
+					<base:Property id="K1wAV8_MSU6vyLJhyL1Bug" name="XTOL" value="Bonus Plan ID" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="2BD8RJNlY0GEoSE0SLzmcw" proxyName="PBO_BonusPlanRO" field="-~BonusPlanID" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+								<uxc:DataField id="mV8CAVdEpke2SpAKHHAzaA" name="Description" type="string" cctsType="text">
+							<base:PropertyBag id="5e2acxdlpkKIqT640OCsqw">
+					<base:Property id="2mIyG3wESEGEqNwHvNoEUA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="MKTpWN8EJ0_7iLUFESsduw" name="UITEXTID" value= "Y081KNQXY_E976B4B003E12016" />
+					<base:Property id="4Q6ZLqe5sUiGa2K2RIiLKw" name="XFLD" value="Description" />
+					<base:Property id="hyHVajYM502YWHgaTykbAA" name="XCOL" value="Description" />
+					<base:Property id="VDvplMl0xE6_I4EQXzOKxA" name="XTOL" value="Description" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="hATmWstBvU2Tqe8sBgjQVw" proxyName="PBO_BonusPlanRO" field="-~Description" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+								<uxc:DataField id="SN0zTh8GE0KcSzk2K6QEbQ" name="StartDate" type="date" cctsType="date">
+							<base:PropertyBag id="8tDq5PVKIkGsR0yGLHcvPg">
+					<base:Property id="F79I_JcUpESywaX4cnGJag" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="OiBcKuA4PkaowSzT5M1X6A" name="UITEXTID" value= "Y081KNQXY_F409D2D40551213B" />
+					<base:Property id="9DyfMa4mf0_MxZJU5KeaMg" name="XFLD" value="Start date" />
+					<base:Property id="txTkkKqvI0SwhLDdAofAyA" name="XCOL" value="Start date" />
+					<base:Property id="TRaaUg4bUUiExvYUjBFExQ" name="XTOL" value="Start date" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="rDO9jSCSjEKYsifwGNaekw" proxyName="PBO_BonusPlanRO" field="-~StartDate" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+								<uxc:DataField id="YyFigY06f0m4jARMNq_BQA" name="EndDate" type="date" cctsType="date">
+							<base:PropertyBag id="yWxB2q0RNkKjHPcxsFnVww">
+					<base:Property id="boT1Z2Ha20yEgoPoIpRwAQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="BseKlniEwUOQzZLoUhTz2g" name="UITEXTID" value= "Y081KNQXY_69CECF1289A0973E" />
+					<base:Property id="EqU0b1FEwUa8Bo77nZ4DSg" name="XFLD" value="End date" />
+					<base:Property id="hdpuVuzqgU6mnt2mbYFqNQ" name="XCOL" value="End date" />
+					<base:Property id="pI8ls_mcWk2P3gL5Uj_FEw" name="XTOL" value="End date" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="akLI1OsSt0etCH1B6oB04w" proxyName="PBO_BonusPlanRO" field="-~EndDate" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+								<uxc:DataField id="DgCZttmAaEmEepyqLluvDQ" name="BonusRate" type="float" cctsType="percent">
+							<base:PropertyBag id="2ZAq5flQEEKDAk0P73aByA">
+					<base:Property id="y0_1dcw0Xk2SJbef2CFgwA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="tKpt5fwPjEKZrIrV6M1dwQ" name="UITEXTID" value= "Y081KNQXY_FF3C24DAACFA2B7F" />
+					<base:Property id="FUzWnAn7AEqsRRCrsQZoYw" name="XFLD" value="Bonus rate" />
+					<base:Property id="yOG5oSzC7EK7tVJEDhQ15w" name="XCOL" value="Bonus rate" />
+					<base:Property id="EoN2JaqrXUuAB3mY6AdceQ" name="XTOL" value="Bonus rate" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="E6dWndx0OUOZK5R2f_meHA" proxyName="PBO_BonusPlanRO" field="-~BonusRate" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+							<uxc:Structure id="C7Li4AbshE2AsNW0QO0bdA" name="TargetAmount" cctsType="none">
+										<base:PropertyBag id="DLclfJ_3NEeeoyfzFdcF1g">
+					<base:Property id="JdO0uLk170mlsid0Ym_gnQ" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="kulZyN_KvEmlth2TAtMJgA" name="UITEXTID" value= "Y081KNQXY_8099E2EE2CB1C899" />
+					<base:Property id="lraFaTdDJk_fbjWQqQ7uKA" name="XFLD" value="Target amount" />
+					<base:Property id="5xNiDtJ73EmTKDQNC0Y7Kg" name="XCOL" value="Target amount" />
+					<base:Property id="AKpRByC2q0ePAAKMwpav5g" name="XTOL" value="Target amount" />
+					</base:PropertyBag>
+						<uxc:Bind id="EWEw3penl0WG4EBIscSKNg" proxyName="PBO_BonusPlanRO" field="-~TargetAmount" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+									<uxc:DataField id="juVQZ9WFt06BD1AEX42wtw" name="content" type="float" cctsType="amount">
+								<base:PropertyBag id="kijAOcPRD0Opb4qZIkTo7Q">
+						<base:Property id="VfcSkeRLW0itDLQztdAfMA" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="fJfsICwX8Ee2RZ6RneMC2g" name="UITEXTID" value= "Y081KNQXY_8099E2EE2CB1C899" />
+						<base:Property id="iujbRP6WVEq2g61mjcQH8Q" name="XFLD" value="Target amount" />
+						<base:Property id="rFeUtOhBG0GdWEicLOji1A" name="XCOL" value="Target amount" />
+						<base:Property id="Xzcd9wPnkE__aRWePZDy6w" name="XTOL" value="Target amount" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="ys3ATilmk0ix_BCnL0fEhw" proxyName="PBO_BonusPlanRO" field="-~content" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+					</uxc:DataField>
+									<uxc:DataField id="OmhfBUOhUkCqUzQbDpu2dw" name="currencyCode" type="string" cctsType="code">
+								<base:PropertyBag id="yuvOgm6c402gxRFUnrXVKQ">
+						<base:Property id="B2pT3MxrDkqn0oXjLQhTCA" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="9GWVpHWTfkadwBMQhggcxw" name="UITEXTID" value="" />
+						<base:Property id="jqaaEnu2TU2iTAU5ZbGAgg" name="XFLD" value="" />
+						<base:Property id="k0i8hKuRQUSFykqGlArCwg" name="XCOL" value="" />
+						<base:Property id="ZW_Zam36tUWqUoAtcahFUA" name="XTOL" value="" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="lIZ1HKIWBka0ta7IRqvi4A" proxyName="PBO_BonusPlanRO" field="-~currencyCode" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+						<uxc:Codelist id="y8F3MFOzR0abUVwgrhI2jg" type="static" typeName="CurrencyCode" esrNamespace="http://sap.com/xi/BASIS/Global" />
+					</uxc:DataField>
+				</uxc:Structure>
+							<uxc:Structure id="IlFmn_aq60_xm2tMbDYpEQ" name="TotalRevenue" cctsType="none">
+										<base:PropertyBag id="9YA0ChTCgEacV5sdrZBR4A">
+					<base:Property id="YsWDZKp3nEiMqm73HJ2k9g" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="dp5_yONnTEe4Z9wy_NghZA" name="UITEXTID" value= "Y081KNQXY_BBB57F8079CBAD63" />
+					<base:Property id="90FdxmdMKky2Gr7g4EGf7A" name="XFLD" value="Total revenue" />
+					<base:Property id="OJ8a9z5jpUOJvH3vMBAEMw" name="XCOL" value="Total revenue" />
+					<base:Property id="UmbukHyJuE2hXSPHLFTeJA" name="XTOL" value="Total revenue" />
+					</base:PropertyBag>
+						<uxc:Bind id="4rUgBNUJQUyZ_AuiK1ZYHQ" proxyName="PBO_BonusPlanRO" field="-~TotalRevenue" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+									<uxc:DataField id="z1FIEo2Zh069pUlB9Zh0Kg" name="content" type="float" cctsType="amount">
+								<base:PropertyBag id="LO4LUYd1AkeEdN5BkrHYDg">
+						<base:Property id="5zO18Wv42Eudwmn0f1QLUA" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="Q_xpn47B506kKHgrT8Zxfg" name="UITEXTID" value= "Y081KNQXY_BBB57F8079CBAD63" />
+						<base:Property id="ThKkUk8lskufLNVdkJXDhQ" name="XFLD" value="Total revenue" />
+						<base:Property id="NhEV1XbzNkuAldqTcFoP2w" name="XCOL" value="Total revenue" />
+						<base:Property id="zpxlQ48EwECHqgN04GgLHQ" name="XTOL" value="Total revenue" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="Gv2UwrOJhEKxld4VsuyC0g" proxyName="PBO_BonusPlanRO" field="-~content" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+					</uxc:DataField>
+									<uxc:DataField id="Hj42e93o1kqI3MpqkUavGg" name="currencyCode" type="string" cctsType="code">
+								<base:PropertyBag id="GkTI6oy7lkCt7TLphhylPg">
+						<base:Property id="rbkF2_AMCUO5JS5gTbHtHA" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="0k4QM5VfHE2AW9bqEVonFg" name="UITEXTID" value="" />
+						<base:Property id="NAJo5OovakeiNGPWp69l6Q" name="XFLD" value="" />
+						<base:Property id="ONpWjO3JQEORBq0sLRd2GA" name="XCOL" value="" />
+						<base:Property id="cQlktUVbf0S6_WmoCzciuQ" name="XTOL" value="" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="kNA13B5K00qYuTm30hrWsg" proxyName="PBO_BonusPlanRO" field="-~currencyCode" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+						<uxc:Codelist id="sOmlEsRwW0K8sKzKmjTX5w" type="static" typeName="CurrencyCode" esrNamespace="http://sap.com/xi/BASIS/Global" />
+					</uxc:DataField>
+				</uxc:Structure>
+							<uxc:Structure id="WK2hffdr406vvqUakZjVTg" name="TotalBonus" cctsType="none">
+										<base:PropertyBag id="6vVhpL6CZE_S9OVtS0qRJQ">
+					<base:Property id="jl1UNQCmKEi4ekbgjdMPKw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="0K9ZnP0klUq5rBKfY4eisw" name="UITEXTID" value= "Y081KNQXY_9EB14E3080B28397" />
+					<base:Property id="yJV7VvueUEyzFWEuVlA_KQ" name="XFLD" value="Total bonus" />
+					<base:Property id="b3EN5xK7jUmA56Wjuep3Uw" name="XCOL" value="Total bonus" />
+					<base:Property id="xWUcCAKhEE_rniCUTS5kkg" name="XTOL" value="Total bonus" />
+					</base:PropertyBag>
+						<uxc:Bind id="akIEuDnuXEWMAjPD0MA2qw" proxyName="PBO_BonusPlanRO" field="-~TotalBonus" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+									<uxc:DataField id="lVOu38NZR0WN0hglD1FX0A" name="content" type="float" cctsType="amount">
+								<base:PropertyBag id="UPHs4J5vN0W5X3xA_L3VLw">
+						<base:Property id="7xjQaymE906L4UtTMVjuNQ" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="P8du1ix2wEWbafjFmpS6sQ" name="UITEXTID" value= "Y081KNQXY_9EB14E3080B28397" />
+						<base:Property id="PcE1Zb0Bl0qyAfqJK_X_sg" name="XFLD" value="Total bonus" />
+						<base:Property id="NlTMomLaM0az_U8jMAdVwQ" name="XCOL" value="Total bonus" />
+						<base:Property id="6_mAi26kmEqLmOAT4xfQCA" name="XTOL" value="Total bonus" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="fgyZyYs_O0KjWfT0tNb5gw" proxyName="PBO_BonusPlanRO" field="-~content" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+					</uxc:DataField>
+									<uxc:DataField id="CgEtZA4gs0q28Ia74nUsrg" name="currencyCode" type="string" cctsType="code">
+								<base:PropertyBag id="hZ0bbmEkQUOsnKfjvAUPdg">
+						<base:Property id="d0bQdQck3kOBpVjoXkAbGw" name="BINDINGSTATUS" value="OK" />
+						<base:Property id="6go39mUzNEi_nNPAfmWsFQ" name="UITEXTID" value="" />
+						<base:Property id="CmUZvU37skS2okV2j5RVEA" name="XFLD" value="" />
+						<base:Property id="ONmKDuGLrkSoq594jBDdtQ" name="XCOL" value="" />
+						<base:Property id="mdSmAG5Gf0GUUP9oKi2CNw" name="XTOL" value="" />
+						</base:PropertyBag>
+						
+						<uxc:Bind id="19H89yA1NUC5Z9iR57XezQ" proxyName="PBO_BonusPlanRO" field="-~currencyCode" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+						<uxc:Codelist id="Imez9JCTrUKypUvVNWqoNw" type="static" typeName="CurrencyCode" esrNamespace="http://sap.com/xi/BASIS/Global" />
+					</uxc:DataField>
+				</uxc:Structure>
+								<uxc:DataField id="NqTW20Kcu0ihdZxx9Ig3qg" name="IsConsistent" type="boolean" cctsType="indicator">
+							<base:PropertyBag id="XgF58FdDM0C_dgWAveXE_w">
+					<base:Property id="T5osXBRvdkyU4aAqZprfGw" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="0I4h21d48kCraI8ZJnNt4w" name="UITEXTID" value="" />
+					<base:Property id="Kuh0gnJgfEyRMXb6UhBPmw" name="XFLD" value="" />
+					<base:Property id="y2q0b3kANUm6Rin87IAVDg" name="XCOL" value="" />
+					<base:Property id="bfoqzm31dkaxQmoOUdjsqw" name="XTOL" value="" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="KEi0sT5JIkeRhHQ2VBVDXQ" proxyName="PBO_BonusPlanRO" field="-~IsConsistent" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+								<uxc:DataField id="nzryfDAVdECV5D8TrRDJWg" name="EmployeeID" type="string" cctsType="identifier">
+							<base:PropertyBag id="zLW7MfhCg02bcV0Pnqi4Kg">
+					<base:Property id="wyJr_U4EBUCgo30zL7fQjA" name="BINDINGSTATUS" value="OK" />
+					<base:Property id="5AjT6NZE70K7QAtmVyO3hQ" name="UITEXTID" value= "Y081KNQXY_A36C338400454D39" />
+					<base:Property id="3j7newS2xUiykcjoe4wxAw" name="XFLD" value="EmployeeID" />
+					<base:Property id="AkLBgskrHU6nA1XvEeP7_g" name="XCOL" value="EmployeeID" />
+					<base:Property id="PzdU5wMVu06osTHURuFicA" name="XTOL" value="EmployeeID" />
+					</base:PropertyBag>
+					
+					<uxc:Bind id="yIU4yw_8nUuLuHFSQ5dXlQ" proxyName="PBO_BonusPlanRO" field="-~EmployeeID-~content" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+				</uxc:DataField>
+
+         <uxc:DataField id="Ui_5WLuOJq2nAwhJNFr5cm" name="NodeID" type="string">
+           <base:PropertyBag id="WdWWAoo3WaMRItkXql1raW">
+             <base:Property id="a5MX93C2iq6R$L3h4Xagrm" name="BINDINGSTATUS" value="OK" />
+             <base:Property id="1MfCUnAYXqkaLi7B9G4NGm" name="USERCHANGEDNAME" value="True" />
+           </base:PropertyBag>
+           <uxc:Bind id="evrUaMg3y4oOtk06ZwX7fm" proxyName="PBO_BonusPlanRO" field="-~NodeID" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" />
+         </uxc:DataField>
+       </uxc:Structure>
+       <uxc:DataField id="rRcGGwTplK6ukdAknhP2a0" name="OBN_NAV_KEY" type="string">
+         <base:PropertyBag id="0eFpsQd9SaYTE8GEOiTU9m">
+           <base:Property id="XJP8DdF4qKAnrHJOxWsk_0" name="BINDINGSTATUS" value="ToBind" />
+           <base:Property id="VvpulYI0r4oZuSukMdtn6m" name="USERCHANGEDNAME" value="True" />
+         </base:PropertyBag>
+       </uxc:DataField>
+         <uxc:Structure id="uswqsUWT9KgmvWqHfoW1dG" name="$System">
+           <base:PropertyBag id="Q_B8wsIKGqUlHAUWUk69jW">
+             <base:Property id="OlLKCzNu4agptHRHxsIB2G" name="BINDINGSTATUS" value="Internal" />
+           </base:PropertyBag>
+           <uxc:DataField id="4BtZf3qnDqUD3kcFlwe1am" name="SessionUrl" type="string">
+             <base:PropertyBag id="GrJWgcQh9aowC8VvYXdxDG">
+               <base:Property id="7br86fQ6FKcdG8ruzb4gR0" name="BINDINGSTATUS" value="Internal" />
+             </base:PropertyBag>
+           </uxc:DataField>
+           <uxc:DataField id="ARIkgJXkK4ckcD$4juWrDW" name="Saved" type="boolean">
+             <base:PropertyBag id="CeESKQCZ$qIdtdujMUCXkG">
+               <base:Property id="cuTg5Ty_JKcp9YuKkf1LiG" name="BINDINGSTATUS" value="Internal" />
+             </base:PropertyBag>
+           </uxc:DataField>
+           <uxc:DataField id="JN$UpF71cqQPuWE3zRFX5G" name="IsPersistent" type="boolean">
+             <base:PropertyBag id="5Jq8XAmoc4otNSCq9O4V6m">
+               <base:Property id="Yb40q_nY4qkIuTZByosdmG" name="BINDINGSTATUS" value="Internal" />
+             </base:PropertyBag>
+           </uxc:DataField>
+         </uxc:Structure>        
+    </uxc:DataModel>
+
+    <uxc:EventHandlers id="e0GEm95gTq6TmlbvagGUe0">
+      <uxc:EventHandler id="2z0UHyfVXa6dSOVtDh5IYm" name="SaveHandler">
+        <uxc:WindowAction id="EcgJtU8UbacVAsBqXc2EIW" name="Save" action="Save" />
+      </uxc:EventHandler>
+      <uxc:EventHandler id="a2kNyfAoMq2YInIOc8Pz1G" name="CreateHandler" eventType="simple">
+        <uxc:BoOperation id="40_yiE2sH4El8zfDDI2LsW" name="Create" proxyName="PBO_BonusPlanRO" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" operation="Create" />
+      </uxc:EventHandler>
+
+            <uxc:EventHandler id="mOLycrEo8ki8vvd8cl71nQ" name="ActionCalculateBonusHandler">
+        <uxc:BoAction id="jSy9PHInrU_UY4f4pvKdAw" name="ActionCalculateBonus" proxyName="PBO_BonusPlanRO" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" actionPath="->CalculateBonus" instanceBinding="/Root" />
+      </uxc:EventHandler>
+            
+
+
+      
+			<uxc:EventHandler id="sICdgFRIoq2Ygm4HxxqCyG" name="ViewAllHandler">
+				<uxc:BoOperation id="6ZMrk3qm0awumsdySc$qkW" name="Operation1" proxyName="PBO_BonusPlanRO" esrNamespace="http://refsystems.sap.com/Y081KNQXY_" operation="Read">
+  					<uxc:BoOperationParameter id="txzt52_XLK6E9jLmcX1HRm" name="NavKey" bind="/Root/OBN_NAV_KEY" type="nodeId" path="/Root/PBO_BonusPlanRO/NodeID" />  
+  				</uxc:BoOperation>
+  		</uxc:EventHandler>
+
+      <uxc:EventHandler id="vAommTVlWKEQiwTg_NxrQm" name="CloseHandler">
+     <uxc:WindowAction id="XgQfW7R1pa6sEXgr_fz_K0" name="Operation" action="Close" />
+   </uxc:EventHandler>
+ </uxc:EventHandlers>
+    <uxc:ModelChanges />
+  </uxc:Implementation>
+  <uxc:Navigation id="S$lJhzLTTqQXl_ly4VsLnW" />
+  <uxc:EmbeddedComponents id="0GA_tdeGNqwVjdI04FCSzW" />
+  <uxc:RBAMData id="50ecLbjAy4MOrdNhbfYrE0" accessCheckMode="PrivilegedExceptAccessControlledBusinessObjects">
+    <uxc:AccessControlledBusinessObject id="xyFiVTRY_qQOYNGhlRWsWW" BO="PBO_BonusPlanRO" BONS="http://refsystems.sap.com/Y081KNQXY_" unrestrictedAccess="true" />
+   </uxc:RBAMData>
+  <uxc:Description id="zs88KqsAVaMKDL3Z_faRDG" textPoolId="DTIBpVjcgqQbOYm3S4vKjW" />
+
+  <Tags id="7UGpWxSINKU9cuGqT0IWHG">
+          </Tags>
+  
+  <UXView id="Bpg7a1BnnK6cGvWTJ228OG" patternType="objectInstance" checkClassification="Standard" checkMode="Both">
+    <uxv:IdentificationRegion id="1GC_8KDui4UOJ9kNi3qAEW">
+      <uxv:Title id="PVPq6vaMIq_VzN5TFnzWtG" textPoolId="cd814d84b1254e01b1b6f092479ed179" />
+    </uxv:IdentificationRegion>
+    <uxv:ContextualNavigationRegion id="h9yz0FHc4a_lKGh_KxYJeG">
+      <uxv:ViewSwitchNavigation id="z0GdRKlweKM$ZDOh9N4VPW">
+        <uxv:NavigationItem id="vrKkAihq8KcXjwFjX2wm5W" navigationItemId="NavigationItem_jwfa0SEV1KI6_3JN7GyKWm">
+          <base:PropertyBag id="Vw7Yv7kO2a2Cd$XcAgR_40">
+            <base:Property id="tBycSHg6w4kmHGQTb3rTN0" name="NavigationTarget" value="" />
+          </base:PropertyBag>
+          <uxv:Title id="RSiShoqtXqEvBg16RQGXk0" textPoolId="1c6dbd827ce248b4992fac68439bcf41" />
+        </uxv:NavigationItem>
+        <uxv:NavigationItem id="C0bo7Qy7zqY_c3JPaEq9Rm" navigationItemId="NavigationItem1_Ue5VkLVxYa2G6mbKghBFXm">
+          <base:PropertyBag id="XgOn58cGu4_Hi7UWHvL090">
+            <base:Property id="NtgWFIevuK2riw3I5RbMvm" name="NavigationTarget" value="" />
+          </base:PropertyBag>
+          <uxv:Title id="eEpDAsb4R4EwH7iZhVZaFG" textPoolId="8898aff204454a91b0db5f1cbeb219c2" />
+        </uxv:NavigationItem>
+        <uxv:NavigationItem id="A3q2fObDWKY2CpwEEnQKVW" navigationItemId="NavigationItem2_9lZlohXyV4MHv4jszm8wcG">
+          <base:PropertyBag id="vPdORFa3wqcrJU8oTZp$GG">
+            <base:Property id="NKWkypnLF4UCZztQN9Ykvm" name="NavigationTarget" value="" />
+          </base:PropertyBag>
+          <uxv:Title id="DLdpbqrkEKw3N1_EGogBLm" textPoolId="72d10059fa2543c280abbe2b092f4e61" />
+        </uxv:NavigationItem>
+        <uxv:NavigationItem id="D9sfIXiFZKQVBaOO6SMoV0" navigationItemId="NavigationItem3_b2OdjH_iKa6Gjar_bnXPHm">
+          <base:PropertyBag id="cQHP1PoiNqEl9Uie921E_G">
+            <base:Property id="k5nhWNg93KY96cws9aSseG" name="NavigationTarget" value="" />
+          </base:PropertyBag>
+          <uxv:Title id="y1xWJyAiB4UyCNJVOukuyG" textPoolId="586dc08ebd844fe0a0237cd94ebd353e" />
+        </uxv:NavigationItem>
+        <uxv:NavigationItem id="jnmtk83HmKUFjoPXrYKgnG" navigationItemId="NavigationItem4_Bdnm29gZ9akaOKfrn0yUUm">
+          <base:PropertyBag id="lRRVkbrz8qQZwUbA5VQPN0">
+            <base:Property id="c$ZCazoBm4kuHayAag6um0" name="NavigationTarget" value="" />
+          </base:PropertyBag>
+          <uxv:Title id="7585kA_DHKc1pGaExvOnlG" textPoolId="ffde5dd1103f4c8f90abfc1f28ba3e4a" />
+        </uxv:NavigationItem>
+        <uxv:SelectedNavigationItemId id="57daEC_8_aEhz2$OI0T$$W" bindingExpression="/Root/UIState/ViewSwitchSelectedItem" />
+      </uxv:ViewSwitchNavigation>
+      <uxv:FunctionBar id="BDlGS_gSwqwEjecUamaX9m">
+        <uxv:ButtonGroup id="H2M9XNn56qogCBNXpM3DTW" name="ActionButtons">
+          <uxv:Button id="_Wv5nG_0RqAXtLfZ9QqrEm" name="Save" onClick="SaveHandler" style="Standard">
+            <uxv:Text id="rTYbk8neR4Mx7vRr1fWO$G" textPoolId="e3bbca08e04245d380a3491fa150ef7b" />
+          </uxv:Button>
+		  <uxv:Button id="wlDzWUDSA4sEnJR0t_W5GW" name="Close" onClick="CloseHandler" style="Cancel">
+              <uxv:Text id="jZo49xtTt4UblNsxNv5PuG" textPoolId="b6d3802bfa274f33a8085780fb212d02" />
+            </uxv:Button>
+		</uxv:ButtonGroup>
+          			
+			  <uxv:ButtonGroup id="_fYeoij524YxoRJO3Cy0Xm" name="ApplicationSpecificButtons">
+		           <uxv:Button id="PzaX6M_lCEqB4TkD3rrzRw" name="ActionCalculateBonusButton" onClick="ActionCalculateBonusHandler" style="Standard">
+            <uxv:Text id="rILomMzSbEGdR96g7gd5YQ" textPoolId="RbFfPeF5g0uYAHfQH4_Xgw" />
+          </uxv:Button>
+          
+          </uxv:ButtonGroup>
+      </uxv:FunctionBar>
+    </uxv:ContextualNavigationRegion>
+    <uxv:ViewContainerRegion id="aAf0JbJ6C4o31qapXFaeSm">
+      <uxv:View id="_ErGk7B$iqgdXmAxmkLSc0" columns="2" rows="2" navigationItemId="NavigationItem_jwfa0SEV1KI6_3JN7GyKWm">
+        <uxv:PaneContainer id="_nKO8XXJr4IkWvnTG79G5m" column="0" row="0" colSpan="2" rowSpan="2">
+          <uxv:FormPane id="mkmo1qdNKqo7buT$U0$Zj0">
+            <uxv:SectionGroup id="vSMJXBECX4gXunrJDAVXH0" column="0" row="0" showGroupName="true">
+              <base:PropertyBag id="zy3ylzOgbKw40HAwcX2UdW">
+                <base:Property id="m8HUqhLOJKA0rZlRZaNUmm" name="Navigation" value="" />
+              </base:PropertyBag>
+              <uxv:SectionGroupName id="xLE0RN6KH4gFrxmYxPavdG" textPoolId="zkONqtbQ7aUwmga20vcEv0" />
+              
+                                       <uxv:SectionGroupItem id="6pkMO9fjDkCX4R2fvpMbzw">
+                            <uxv:Label id="zLPwXUMZ7EqZq6UtItsflA" textPoolId="2wsA9PyEQUimA40ilvQPkQ"/>
+              
+								<uxv:InputField id="YXIgqq2VWEe0xD69_GrgRQ" name="BonusPlanID" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="95F7iKNsPk2jxAavW6y47Q" interpretAsInteger="false" />
+									
+									<uxv:Value id="10JElNnwcEim5DwO5_2xOQ" bindingExpression="/Root/PBO_BonusPlanRO/BonusPlanID">
+										<!-- <base:PropertyBag id="qvyZL8nZ9EGpCHUss4qJ5w">
+											<base:Property id="KYn3IbUG3EuTdAfVn1vSaw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="rMGWPHRr3kuQrVKqYEhDTg">
+                            <uxv:Label id="QLOjmpJGy0ye5zmY9Y5ZwA" textPoolId="JVxGgt58vk25kXXb95vvIg"/>
+              
+								<uxv:InputField id="QAn9V2DGrEin6zndWHCw5g" name="Description" cctsType="text">
+									
+									<uxv:Value id="UBz4_XjZsk2FTqhicbThAA" bindingExpression="/Root/PBO_BonusPlanRO/Description">
+										<!-- <base:PropertyBag id="n2I4yAuWbEqWOSMA5OgKxw">
+											<base:Property id="V43hzjVY9UuXDPsrwlnU_A" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="qX5lSwN3h06DTjW15sxAWw">
+                            <uxv:Label id="xfyi_YR22EaAl2yLV6aAvw" textPoolId="VAOXU96ULECbS7Re_eUwGw"/>
+              
+								<uxv:InputField id="ZaE67v3uDEG47YDdQpQG3A" name="StartDate" cctsType="date">
+									<uxv:DateCCTSConfig id="zxbWoTs1VkygR84do3Xssw" />
+									
+									
+									<uxv:Value id="fFZUQSQnwk_bkvRR_vOMkA" bindingExpression="/Root/PBO_BonusPlanRO/StartDate">
+										<!-- <base:PropertyBag id="Y44DWYh4UUmxGOBdtt7TzQ">
+											<base:Property id="lxCmw08SgkukoyuYJiteWg" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="GpVXLPn6e0ylB9Ge4BHtOg">
+                            <uxv:Label id="6kZsS7VMx02rtUHa_W76CA" textPoolId="ND2OAN4I402125DSmpKvdQ"/>
+              
+								<uxv:InputField id="OhC1z9ZRgkKiD7h1zRIGIg" name="EndDate" cctsType="date">
+									<uxv:DateCCTSConfig id="j7q6UnLWEkiNHMfU57PTSw" />
+									
+									
+									<uxv:Value id="wMPC3Q0530OMkcZh9dAlwQ" bindingExpression="/Root/PBO_BonusPlanRO/EndDate">
+										<!-- <base:PropertyBag id="V14_6gnz_k27nd_okjpoxw">
+											<base:Property id="0qwBbByG_EKsKEuAf2NG9w" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="ForTHrJYv02_QXckEw40aw">
+                            <uxv:Label id="CSRw9ADu2ku0U5h4iUnEzg" textPoolId="xA7Hh8uWk0KyERRQptPDnA"/>
+              
+								<uxv:InputField id="d7Jyb9HKE0CBClnMxrSA3g" name="BonusRate" cctsType="percent">
+									
+									<uxv:Value id="y1NygQkJKkiAiFEaXVIDGQ" bindingExpression="/Root/PBO_BonusPlanRO/BonusRate">
+										<!-- <base:PropertyBag id="ZM6vleXjykyZxqR9CnG2ig">
+											<base:Property id="oM2joBczNkiLXJyMiHiA5w" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="6WmN8GJNWE_fP5PD3zpysA">
+                            <uxv:Label id="nD16V9FYB0_UI8s_0Vshfw" textPoolId="za6Q_6WEjkKxIwnoyu6uLA"/>
+              <uxv:CompoundField id="Cog4ZFlVOkux6oEvTM0qfw" name="TargetAmount" cctsType="amount" structureBinding="/Root/PBO_BonusPlanRO/TargetAmount">
+									
+									<uxv:InputField id="6i_McKiRsUmjs0oe0hNcpA" name="content" cctsType="amount">
+										
+										<uxv:Value id="RhZjUJtRPEmlKBC2266I_A" bindingExpression="/Root/PBO_BonusPlanRO/TargetAmount/content">
+											<!-- <base:PropertyBag id="WpeKeeBYYUGaZPyiMb1_XQ">
+												<base:Property id="pHquCgPDkUaBAcZ1v4LhZw" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:InputField>
+									
+									<uxv:DropDownListBox id="1m15eLVZikmAXS58X0AjBw" name="currencyCode" cctsType="code">
+										<uxv:CodeCCTSConfig id="X1PrV1lBEUyEbqGWySTOrg" />
+										
+										<uxv:Value id="ErwW9STvp0mGxAuU_VFw8A" bindingExpression="/Root/PBO_BonusPlanRO/TargetAmount/currencyCode">
+											<!-- <base:PropertyBag id="FQceQ4dtD0OzdLmiPu0ZaQ">
+												<base:Property id="LB_TNzTigEW2xAOZbbQH7A" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:DropDownListBox>
+								</uxv:CompoundField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="PvVoipEGuEiP2i65s_wF2A">
+                            <uxv:Label id="pstzAKIFU0OmBEhMIXpQYA" textPoolId="emmn68rQFEqAU1rPrXDIng"/>
+              <uxv:CompoundField id="NiiqrQTMXEys4uT_aAsMgA" name="TotalRevenue" cctsType="amount" structureBinding="/Root/PBO_BonusPlanRO/TotalRevenue">
+									
+									<uxv:InputField id="ONDfBx42XE_CAD7lnpZ0bg" name="content" cctsType="amount">
+										
+										<uxv:Value id="UO006l8q5ky70uip3K6AdQ" bindingExpression="/Root/PBO_BonusPlanRO/TotalRevenue/content">
+											<!-- <base:PropertyBag id="gRGABqhGCEajoG1MUA2NOg">
+												<base:Property id="m15EJRld4kiqSVX9M4b_pA" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:InputField>
+									
+									<uxv:DropDownListBox id="IAzae3E37UyjYPr6_Z3C4g" name="currencyCode" cctsType="code">
+										<uxv:CodeCCTSConfig id="s6uQr2arYUmJYMVDdoA90w" />
+										
+										<uxv:Value id="YA52Dc9hCk2Mhf7MzvAGHQ" bindingExpression="/Root/PBO_BonusPlanRO/TotalRevenue/currencyCode">
+											<!-- <base:PropertyBag id="cmwaMQhx9kuf4vgBEJYtIg">
+												<base:Property id="mNNsRW7IOEiF_AHDpeYR1w" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:DropDownListBox>
+								</uxv:CompoundField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="sDjlJaLWuEyimdJ0Ns16Eg">
+                            <uxv:Label id="IY8HdiSDTkawb1GoFKRBZw" textPoolId="cNW7m_LyiUqECqon8qMNMw"/>
+              <uxv:CompoundField id="zMa0HAcYHkGUFtFPRCCTmw" name="TotalBonus" cctsType="amount" structureBinding="/Root/PBO_BonusPlanRO/TotalBonus">
+									
+									<uxv:InputField id="UJRjtimrxE2UT1mypf4Beg" name="content" cctsType="amount">
+										
+										<uxv:Value id="FCSv_AeLuUiU0a6ZcaxQpA" bindingExpression="/Root/PBO_BonusPlanRO/TotalBonus/content">
+											<!-- <base:PropertyBag id="juHZfZ4AM0KAWW4u_vQQPA">
+												<base:Property id="xHnSU2XKI06YPPAT916U4A" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:InputField>
+									
+									<uxv:DropDownListBox id="aarTTiy2kUu1aSGHc6ddsQ" name="currencyCode" cctsType="code">
+										<uxv:CodeCCTSConfig id="9_OUVUTbrEqb8D7IClgpBw" />
+										
+										<uxv:Value id="qosUAAOAZUKYNUSVmjAttQ" bindingExpression="/Root/PBO_BonusPlanRO/TotalBonus/currencyCode">
+											<!-- <base:PropertyBag id="yuCSCYBy6U26Gd1JZoncfQ">
+												<base:Property id="xdVEDd1XIkuHuuuW9pn_RA" name="Name" value="" />
+											</base:PropertyBag> -->
+										</uxv:Value>
+										</uxv:DropDownListBox>
+								</uxv:CompoundField>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="xJqCD0aea06qlsSnQp1_Lw">
+                            <uxv:Label id="3wAh10oxC0ecGIHCMF0gYQ" textPoolId="nD7HKfJQeE_EP8is5c9Nog"/>
+              
+								<uxv:CheckBox id="5si_5KV8cU2oIAHHkgQwDg" name="IsConsistent" cctsType="indicator">
+									
+									<uxv:Value id="7KQ6MvBhzUqYt3OitmBKxg" bindingExpression="/Root/PBO_BonusPlanRO/IsConsistent">
+										<!-- <base:PropertyBag id="DaLjLHElO0exLqFIcY3YgQ">
+											<base:Property id="qb01I9OzO06xpw47AS_HDQ" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:CheckBox>
+                          </uxv:SectionGroupItem>
+                                        <uxv:SectionGroupItem id="qSGrTGPU00_K1ar5S2kFSg">
+                            <uxv:Label id="45Jdg8v_AEe81PzD002iiQ" textPoolId="AsMfzIGOzk6zwqOcJgSLww"/>
+              
+								<uxv:InputField id="8OtOe4f4AEWPefpxhYWDog" name="EmployeeID" cctsType="identifier">
+									<uxv:IdentifierCCTSConfig id="8U_ty4NVQk6ocTUDSPZ6gQ" interpretAsInteger="false" />
+									
+									<uxv:Value id="N7g5fWf0F0ywjAqCkZbW3Q" bindingExpression="/Root/PBO_BonusPlanRO/EmployeeID">
+										<!-- <base:PropertyBag id="p3EoenT940_WCyGZAlcEqA">
+											<base:Property id="PPv9yaZZSEiciY4XTA2ULw" name="Name" value="" />
+										</base:PropertyBag> -->
+									</uxv:Value>
+									</uxv:InputField>
+                          </uxv:SectionGroupItem>
+                          </uxv:SectionGroup>
+          </uxv:FormPane>
+        </uxv:PaneContainer>
+      </uxv:View>
+      <uxv:View id="N4Y5BFvzuasNFvcvYPSYmW" columns="2" rows="2" navigationItemId="NavigationItem1_Ue5VkLVxYa2G6mbKghBFXm" />
+      <uxv:View id="SOnyJXESR4wEXH1IBkPs3G" columns="2" rows="2" navigationItemId="NavigationItem2_9lZlohXyV4MHv4jszm8wcG" />
+      <uxv:View id="gPBF_IkXdKcWiGKrwPfmtW" columns="2" rows="2" navigationItemId="NavigationItem3_b2OdjH_iKa6Gjar_bnXPHm" />
+      <uxv:View id="m2Yr7JBJV4U$C87qmB1q_m" columns="1" rows="1" navigationItemId="NavigationItem4_Bdnm29gZ9akaOKfrn0yUUm" />
+    </uxv:ViewContainerRegion>
+    <uxv:ActionForms />
+  </UXView>
+  <TextPool>
+    <base:TextBlock language="EN" masterLanguage="true" currentLanguage="true">
+      <base:TextPoolEntry id="oDl1EhIL$aEVczFMn5i0KG" textUuid="cd814d84b1254e01b1b6f092479ed179" text="PBO_BonusPlanRO : &lt;ID and/or Description&gt;" textCategory="XTIT" />
+      <base:TextPoolEntry id="D7dONOlLD4ohDAEGe7d11G" textUuid="e3bbca08e04245d380a3491fa150ef7b" text="Save" textCategory="XBUT" />
+      <base:TextPoolEntry id="vg1t2LcoIqcpE7Lcvt04TW" textUuid="b6d3802bfa274f33a8085780fb212d02" text="Close" textCategory="XBUT" />
+      <base:TextPoolEntry id="qDlO8X5JKqka5Y8gFqo6u0" textUuid="1c6dbd827ce248b4992fac68439bcf41" text="General" textCategory="XTBS" />
+      <base:TextPoolEntry id="BBUC7XLfP4gpHz0SqtF_km" textUuid="8898aff204454a91b0db5f1cbeb219c2" text="Line Items" textCategory="XTBS" />
+      <base:TextPoolEntry id="O8rfcZ16PK2kaN5Lt_uSb0" textUuid="72d10059fa2543c280abbe2b092f4e61" text="Changes" textCategory="XTBS" />
+      <base:TextPoolEntry id="j$hVjWTNbqwmSJA1YyQus0" textUuid="586dc08ebd844fe0a0237cd94ebd353e" text="Notes" textCategory="XTBS" />
+      <base:TextPoolEntry id="T66$5XtK5qo7Lyw_NFGR20" textUuid="ffde5dd1103f4c8f90abfc1f28ba3e4a" text="Attachments" textCategory="XTBS" />
+      <base:TextPoolEntry id="VQbXjneCqaIk2lcoo3Hd0m" textUuid="zkONqtbQ7aUwmga20vcEv0" text="FieldGroup" textCategory="XGRP" />
+      <base:TextPoolEntry id="25mWfzdlmKQi6vXK0_xXQW" textUuid="DTIBpVjcgqQbOYm3S4vKjW" text="BonusPlanRO_OIF" textCategory="YEXP" />
+	      <base:TextPoolEntry id="jGZDvubCNUKJnlthMPANJQ" textUuid="2wsA9PyEQUimA40ilvQPkQ" text="Bonus Plan ID" esrTextId="Y081KNQXY_BD4AA741B20C7C63" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="HSayovsQrEiT2zGSAHXTSw" textUuid="JVxGgt58vk25kXXb95vvIg" text="Description" esrTextId="Y081KNQXY_E976B4B003E12016" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="BYeinD2Mt0iJcAC9AdlApg" textUuid="VAOXU96ULECbS7Re_eUwGw" text="Start date" esrTextId="Y081KNQXY_F409D2D40551213B" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="6eAom5OAgU2WoO_VhTIoeQ" textUuid="ND2OAN4I402125DSmpKvdQ" text="End date" esrTextId="Y081KNQXY_69CECF1289A0973E" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="InELZ1YlAEaEaOnwUTVBBQ" textUuid="xA7Hh8uWk0KyERRQptPDnA" text="Bonus rate" esrTextId="Y081KNQXY_FF3C24DAACFA2B7F" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="xhCDKCCJa026ZFcWvdfDxw" textUuid="za6Q_6WEjkKxIwnoyu6uLA" text="Target amount" esrTextId="Y081KNQXY_8099E2EE2CB1C899" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="flDZIvMX30KVURnECMt33Q" textUuid="kYK8idPuLky81hV6BWz4FQ" text="Target amount" esrTextId="Y081KNQXY_8099E2EE2CB1C899" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="QPozdK3M9kOStASdKryA5g" textUuid="DjIlSqiwOEiCcXFaDABKuQ" text="currencyCode" />
+            <base:TextPoolEntry id="WrRwyRqTmkWQjyMVWEywPw" textUuid="emmn68rQFEqAU1rPrXDIng" text="Total revenue" esrTextId="Y081KNQXY_BBB57F8079CBAD63" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="CJ_AgMrl_0_6i9VTUbX4FQ" textUuid="y536ZYjhbE6OFUe2vDnQ2g" text="Total revenue" esrTextId="Y081KNQXY_BBB57F8079CBAD63" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="St9hRxBcU0arMwr3PABMyA" textUuid="CdVJvwSRFUG3bOAfGf2Agg" text="currencyCode" />
+            <base:TextPoolEntry id="fyA9XWHhP0CzAj8J31db6A" textUuid="cNW7m_LyiUqECqon8qMNMw" text="Total bonus" esrTextId="Y081KNQXY_9EB14E3080B28397" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="CDwRtFDhIESpvfklASvIZw" textUuid="epcx9Kg3U0iq5DmuD0RzCQ" text="Total bonus" esrTextId="Y081KNQXY_9EB14E3080B28397" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="2MLtUHqnyE__iECrAGZl7Q" textUuid="5yPXhSoFikSW9Sa57VooAw" text="currencyCode" />
+            <base:TextPoolEntry id="_z9bKgCSE0ODeSYRKKO25w" textUuid="nD7HKfJQeE_EP8is5c9Nog" text="IsConsistent" />
+            <base:TextPoolEntry id="VQt11E2NgkKc3ljqaLsMeA" textUuid="AsMfzIGOzk6zwqOcJgSLww" text="EmployeeID" esrTextId="Y081KNQXY_A36C338400454D39" esrTextCategory="XFLD" textCategory="XFLD" />
+            <base:TextPoolEntry id="e2X1kMNjyUWmDHdNw8c4cA" textUuid="RbFfPeF5g0uYAHfQH4_Xgw" text="CalculateBonus" />
+          </base:TextBlock>
+  </TextPool>
+</UXComponent>

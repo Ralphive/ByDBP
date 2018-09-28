@@ -1,0 +1,54 @@
+﻿import ABSL;
+import AP.CRM.Global;
+import AP.FO.BusinessPartner.Global;
+ 
+// Var to calculate total value
+var totalItemValues;
+ 
+// Var for calculating the total value of all the quotes
+var totalValues = 0;
+ 
+// variables for query
+var query;
+var selParameter;
+var result;
+ 
+// Query the sales quotes for the selected employee in the given timeframe
+var retrieveEmployee = BusinessPartner.Retrieve(this.ToEmployee.UUID);
+ 
+if (retrieveEmployee.IsSet())
+{
+       query = CustomerQuote.QueryByElements;
+       selParameter = query.CreateSelectionParams();
+       selParameter.Add(query.PartyEmployeeResponsiblePartyKey.PartyID.content, "I", "EQ", retrieveEmployee.InternalID); // I=Include, EQ = EqualTo
+       result = query.Execute(selParameter);
+ 
+       var tempRevenueSum = 0;
+       if (result.GetFirst().IsSet())
+       {
+             foreach (var CustomerQuote_instance in result)
+             {
+                    totalItemValues = 0;
+ 
+                    foreach (var CustomerQuote_Item in CustomerQuote_instance.Item)
+                    {
+                          totalItemValues = totalItemValues + CustomerQuote_Item.ItemTotalValues.NetAmount.content;
+                    }
+             }
+             totalValues = totalValues + totalItemValues;
+       }
+ 
+       // assign the total bonus
+       this.TotalRevenue.content = totalValues;
+	   this.TotalRevenue.currencyCode = this.TargetAmount.currencyCode;
+ 
+       if (this.TotalRevenue.content > this.TargetAmount.content)
+       {
+             this.TotalBonus.content = this.TotalRevenue.content * (this.BonusRate / 100);
+			 this.TotalBonus.currencyCode = this.TargetAmount.currencyCode;
+       }
+       else
+       {
+             this.TotalBonus.content = 0;
+       }
+}

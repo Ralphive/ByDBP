@@ -1,0 +1,28 @@
+﻿
+
+import ABSL;
+import AP.FO.BusinessPartner.Global;
+
+this.IsConsistent = true;
+
+//Check the dates
+if(this.StartDate.GreaterThan(this.EndDate)){
+	this.IsConsistent = false;
+	raise MsgInvalidDates.Create("E",this.EndDate, this.StartDate);
+	
+}
+ 
+if (this.BonusRate <0) {
+	this.IsConsistent = false;
+	raise MsgNegativeValues.Create("E");
+}
+
+//Retrieve the Selected Employee
+
+var employee;
+
+employee = Employee.Identification.Retrieve(this.EmployeeID); //Retrieve is quicker than query (but just for small data)
+
+if (employee.IsSet()){
+	this.ToEmployee = employee.ToRoot; // To employee is deinfed is the BO
+}

@@ -1,0 +1,26 @@
+﻿import AP.Common.GDT as apCommonGDT;
+import AP.FO.BusinessPartner.Global;
+
+businessobject PBO_BonusPlanRO raises MsgNegativeValues, MsgInvalidDates{
+
+	message MsgNegativeValues text "Bonus rate must not be negative";
+	message MsgInvalidDates text "The end date &1 must be later than the start date &2" :Date,Date;
+
+	[Label ("Bonus Plan ID")] [AlternativeKey]element BonusPlanID:ID;
+	//
+	[Label ("Description")]		element Description : LANGUAGEINDEPENDENT_EXTENDED_Text;
+	[Label ("Start date")]		element StartDate : Date;
+	[Label ("End date")]		element EndDate : Date;
+	[Label ("Bonus rate")]		element BonusRate : Percent;
+	[Label ("Target amount")]	element TargetAmount : Amount;
+	[Label ("Total revenue")]	element TotalRevenue : Amount;
+	[Label ("Total bonus")]		element TotalBonus : Amount;
+
+	[Transient] element IsConsistent: Indicator; //Transient = Form field
+
+	[Label ("EmployeeID")] element EmployeeID:EmployeeID;
+	association ToEmployee to Employee;
+
+	action CalculateBonus;
+
+}

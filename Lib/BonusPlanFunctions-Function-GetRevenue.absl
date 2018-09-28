@@ -1,0 +1,35 @@
+﻿import ABSL;
+import AP.Common.GDT;
+import AP.FO.BusinessPartner.Global; import AP.CRM.Global;
+// Return value of the function
+var result : DataType::Amount;
+//Variable for calculating the total value of each quote
+var totalItemValues;
+//Variable for calculating the total value of all the quotes
+var totalValues = 0;
+//Define variables for the query
+var query;
+var selParameter; var QueryResult;
+//Query the sales orders of a selected EMPLOYEE for a given TIMEFRAME
+// Query the sales quotes for the relevant time frame
+query = CustomerQuote.QueryByElements; selParameter = query.CreateSelectionParams();
+selParameter.Add(query.PartyEmployeeResponsiblePartyKey.PartyID.content, "I", "EQ", IDEmployee);
+selParameter.Add(query.DateTime, "I", "BT", StartDate.ConvertToGlobalDateTime(), EndDate.ConvertToGlobalDateTime());
+QueryResult = query.Execute(selParameter);
+// Loop over all sales orders and sum up the values
+var tempRevenueSum = 0;
+if (QueryResult.GetFirst().IsSet())
+{
+	foreach (var CustomerQuote_instance in QueryResult)
+	{
+		totalItemValues = 0;
+		foreach (var CustomerQuote_item in
+		CustomerQuote_instance.Item)
+		{
+			totalItemValues = totalItemValues + CustomerQuote_item.ItemTotalValues.NetAmount.content;
+			return result;
+		}
+	}
+}
+totalValues = totalValues + totalItemValues;
+result.content = totalValues;
